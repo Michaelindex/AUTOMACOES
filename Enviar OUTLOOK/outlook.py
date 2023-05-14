@@ -6,6 +6,8 @@
 #message = outlook.CreateItem(0)
 #message.Display()
 #message.To = "mcialbr123@gmail.com"
+#message.Cc = "mcialbr123@gmail.com"   -COM COPIA
+#message.Bcc = emails   - COM COPIA OCULTA
 #message.Subject = "AQUI O ASSUNTO"
 #body = """
 #<h1>Michael</h1>
@@ -27,6 +29,8 @@
 #    message = outlook.CreateItem(0)
 #    message.Display()
 #    message.To = email
+#    message.Cc = "mcialbr123@gmail.com"   -COM COPIA
+#    message.Bcc = emails   - COM COPIA OCULTA
 #    message.Subject = "AQUI O ASSUNTO"
 #    body = """
 #    <h1>Michael</h1>
