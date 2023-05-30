@@ -38,4 +38,4 @@ for email in lista_email:
     """
 
     message.HTMLBody = body
-    #PARA ENVIAR DEVE COLOCAR - message.Send()
+    message.Send()
