@@ -35,8 +35,5 @@ while time.time() - start_time < 60:
 
     # Print the response content
     print(response.json())
-    
-    if response.status_code == 200:
-        break
-    else:
-        time.sleep(0.1)
+
+    time.sleep(0.1)
