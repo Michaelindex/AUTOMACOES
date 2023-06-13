@@ -6,12 +6,12 @@ start_time = time.time()
 
 while time.time() - start_time < 60:
     # Set the API endpoint
-    url = "https://api.faceit.com/queue/v1/player/633f0132403c133d88b9832b"
+    url = "https://api.faceit.com/lobby/v3/activity?ids=615ae688-1f0e-4d94-9d29-81939352e8f3"
 
     # Set the request headers
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer b086711b-eccf-43b3-9da9-d1bef2fc604b"
+        "Authorization": "Bearer 64193c63-1f06-4dc7-b36d-99061618029b"
     }
 
     # Set the request data
@@ -28,7 +28,7 @@ while time.time() - start_time < 60:
     payload = json.dumps(data)
 
     # Make the request
-    response = requests.post('https://api.faceit.com/queue/v1/player/633f0132403c133d88b9832b', headers=headers, data=payload)
+    response = requests.post('https://api.faceit.com/lobby/v3/activity?ids=615ae688-1f0e-4d94-9d29-81939352e8f3', headers=headers, data=payload)
 
     # Print the response status code
     print(response.status_code)
