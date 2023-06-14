@@ -6,7 +6,7 @@ start_time = time.time()
 
 while time.time() - start_time < 60:
     # Set the API endpoint
-    url = "https://api.faceit.com/queue/v1/player/633f0132403c133d88b9832b"
+    url = "#"
 
     # Set the request headers
     headers = {
@@ -28,7 +28,7 @@ while time.time() - start_time < 60:
     payload = json.dumps(data)
 
     # Make the request
-    response = requests.post('https://api.faceit.com/queue/v1/player/633f0132403c133d88b9832b', headers=headers, data=payload)
+    response = requests.post('#', headers=headers, data=payload)
 
     # Print the response status code
     print(response.status_code)
