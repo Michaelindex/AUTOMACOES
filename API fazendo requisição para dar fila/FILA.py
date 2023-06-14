@@ -16,7 +16,7 @@ while time.time() - start_time < 60:
 
     # Set the request data
     data = {
-        "entityId" : "c1686bfd-3737-4e61-93b8-474b4e48d059",
+        "entityId" : "##",
         "entityType" : "hub",
         "leaderId": "#",
         "playerId": "#",
