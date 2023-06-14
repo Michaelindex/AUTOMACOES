@@ -16,11 +16,11 @@ while time.time() - start_time < 60:
 
     # Set the request data
     data = {
-        "leaderId": "ee4d0675-d8db-43ea-8137-390f4a9277d0",
-        "playerId": "ee4d0675-d8db-43ea-8137-390f4a9277d0",
+        "leaderId": "#",
+        "playerId": "#",
         "playerType": "solo",
-        "userIds" : ["ee4d0675-d8db-43ea-8137-390f4a9277d0"],
-        "0" : "ee4d0675-d8db-43ea-8137-390f4a9277d0"
+        "userIds" : ["#"],
+        "0" : "#"
 
     }
 
