@@ -23,7 +23,7 @@ message.HTMLBody = body
 import win32com.client as win32
 outlook = win32.Dispatch("Outlook.Application")
 
-lista_email = ['mcialbr123@', 'mcialbr1234@gmail.com', 'mcialbr1234@hotmail.com']
+lista_email = ['mcialbr123@', 'mcialbr1234@', 'mcialbr1234@']
 
 for email in lista_email:
     message = outlook.CreateItem(0)
