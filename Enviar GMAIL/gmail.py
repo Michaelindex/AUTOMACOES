@@ -9,7 +9,7 @@ def enviar_email():
     """
 
     msg = email.message.Message()
-    msg['Subject'] = "testeteste"
+    msg['Subject'] = "teste"
     msg['From'] = 'mcialbr123@gmail.com'
     msg['To'] = 'mcialbr123@gmail.com'
     password = 'MINHA-SENHA'
