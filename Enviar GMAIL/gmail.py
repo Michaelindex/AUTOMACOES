@@ -13,7 +13,7 @@ def enviar_email():
     msg['From'] = ''
     msg['To'] = ''
     password = ''
-    msg.add_header('Content-Type', 'text/html')
+    msg.add_header('Content-Type', '')
     msg.set_payload(corpo_email )
 
     s = smtplib.SMTP('smtp.gmail.com: 587')
