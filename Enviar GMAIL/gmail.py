@@ -12,7 +12,7 @@ def enviar_email():
     msg['Subject'] = ""
     msg['From'] = ''
     msg['To'] = ''
-    password = 'MINHA-SENHA'
+    password = ''
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email )
 
