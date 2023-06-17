@@ -5,7 +5,7 @@ import win32com.client as win32
 outlook = win32.Dispatch("Outlook.Application")
 message = outlook.CreateItem(0)
 message.Display()
-message.To = "mcialbr123@gmail.com"
+message.To = ""
 message.Cc = "mcialbr123@gmail.com"   #COM COPIA
 #message.Bcc = emails   - COM COPIA OCULTA
 #message.Subject = "AQUI O ASSUNTO"
