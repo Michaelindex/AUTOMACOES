@@ -6,7 +6,7 @@ outlook = win32.Dispatch("Outlook.Application")
 message = outlook.CreateItem(0)
 message.Display()
 message.To = ""
-message.Cc = "mcialbr123@gmail.com"   #COM COPIA
+message.Cc = ""   #COM COPIA
 #message.Bcc = emails   - COM COPIA OCULTA
 #message.Subject = "AQUI O ASSUNTO"
 body = """
