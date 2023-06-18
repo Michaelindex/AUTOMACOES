@@ -27,14 +27,14 @@ def main():
             if location:
                 latitude = location.latitude
                 longitude = location.longitude
-                chat_id = 'SEU_CHAT_ID'  # Substitua pelo ID do chat do Telegram
+                chat_id = '5212651576'  # Substitua pelo ID do chat do Telegram
                 message = f'Localização atual: Latitude {latitude}, Longitude {longitude}'
                 print(message)  # Exibe a mensagem no terminal
                 send_message(chat_id, message)
         except Exception as e:
             print(f'Erro: {str(e)}')
 
-        time.sleep(3600)
+        time.sleep(10)
 
 if __name__ == '__main__':
     main()
