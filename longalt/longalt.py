@@ -4,7 +4,7 @@ from geopy.geocoders import Nominatim
 # Função para obter a localização atual
 def get_location():
     geolocator = Nominatim(user_agent='my_location')
-    location = geolocator.geocode('NomeDaRua, Número, Cidade, Estado, País', timeout=5)
+    location = geolocator.geocode('')
     return location
 
 # Função principal que obtém e imprime a localização
