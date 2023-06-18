@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Geolocalização</title>
+</head>
+<body>
+  <script>
+    if ("geolocation" in navigator) {
+      // Geolocalização disponível
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        console.log("Latitude: " + latitude + ", Longitude: " + longitude);
+      });
+    } else {
+      // Geolocalização não suportada
+      console.log("Geolocalização não suportada pelo seu navegador.");
+    }
+  </script>
+</body>
+</html>
