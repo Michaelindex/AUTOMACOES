@@ -1,4 +1,3 @@
-import time
 from geopy.geocoders import Nominatim
 
 # Função para obter a localização atual
@@ -19,8 +18,6 @@ def main():
                 print(message)  # Exibe a mensagem no terminal
         except Exception as e:
             print(f'Erro: {str(e)}')
-
-        time.sleep(30)
 
 if __name__ == '__main__':
     main()
