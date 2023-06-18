@@ -1,16 +1,17 @@
 import time
 import requests
 from geopy.geocoders import Nominatim
+from urllib.error import URLError
 
 # Função para obter a localização atual
 def get_location():
     geolocator = Nominatim(user_agent='my_location')
-    location = geolocator.geocode('NomeDaRua, Número, Cidade, Estado, País')
+    location = geolocator.geocode('NomeDaRua, Número, Cidade, Estado, País', timeout=5)
     return location
 
 # Função para enviar mensagem para o bot do Telegram
 def send_message(chat_id, text):
-    bot_token = 'SEU_TOKEN_DO_BOT'
+    bot_token = '6258166876:AAHFOyYvt0zKgyLQSBYQ54bhYbpnq_79NlQ'
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
     payload = {
         'chat_id': chat_id,
@@ -31,10 +32,12 @@ def main():
                 message = f'Localização atual: Latitude {latitude}, Longitude {longitude}'
                 print(message)  # Exibe a mensagem no terminal
                 send_message(chat_id, message)
+        except URLError as e:
+            print(f'Erro de conexão: {str(e)}')
         except Exception as e:
             print(f'Erro: {str(e)}')
 
-        time.sleep(10)
+        time.sleep(30)
 
 if __name__ == '__main__':
     main()
