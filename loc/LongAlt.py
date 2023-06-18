@@ -33,7 +33,6 @@ def main():
         except Exception as e:
             print(f'Erro: {str(e)}')
 
-        time.sleep(225)
 
 if __name__ == '__main__':
     main()
