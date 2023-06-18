@@ -1,23 +1,6 @@
 from geopy.geocoders import Nominatim
 
-# Função para obter a localização atual
-def get_location():
-    geolocator = Nominatim(user_agent='my_location')
-    location = geolocator.geocode('')
-    return location
-
-# Função principal que obtém e imprime a localização
-def main():
-    while True:
-        try:
-            location = get_location()
-            if location:
-                latitude = location.latitude
-                longitude = location.longitude
-                message = f'Localização atual: Latitude {latitude}, Longitude {longitude}'
-                print(message)  # Exibe a mensagem no terminal
-        except Exception as e:
-            print(f'Erro: {str(e)}')
-
-if __name__ == '__main__':
-    main()
+geolacalizador = Nominatim(user_agent="teste-palancacode")
+lugar_input = input("Digite o nome do lugar: ")
+lacalizacao = geolacalizador.geocode(lugar_input)
+print(lacalizacao)
