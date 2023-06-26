@@ -11,7 +11,7 @@ while time.time() - start_time < 60:
     # Set the request headers
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 64193c63-1f06-4dc7-b36d-99061618029b"
+        "Authorization": ""
     }
 
     # Set the request data
