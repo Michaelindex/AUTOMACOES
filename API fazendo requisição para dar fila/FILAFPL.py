@@ -22,7 +22,7 @@ while time.time() - start_time < 60:
         "playerId": "ee4d0675-d8db-43ea-8137-390f4a9277d0",
         "playerType": "solo",
         "userIds" : ["ee4d0675-d8db-43ea-8137-390f4a9277d0"],
-        "0" : "ee4d0675-d8db-43ea-8137-390f4a9277d0"
+        "0" : ""
 
     }
 
