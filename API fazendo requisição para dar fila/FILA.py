@@ -18,7 +18,7 @@ while time.time() - start_time < 60:
     data = {
         "entityId" : "",
         "entityType" : "hub",
-        "leaderId": "f4f8db79-0e8a-4a12-a2f0-fee9537219e7",
+        "leaderId": "",
         "playerId": "f4f8db79-0e8a-4a12-a2f0-fee9537219e7",
         "playerType": "solo",
         "userIds" : ["f4f8db79-0e8a-4a12-a2f0-fee9537219e7"],
