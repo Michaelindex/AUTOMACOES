@@ -11,18 +11,18 @@ while time.time() - start_time < 60:
     # Set the request headers
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer cac348ee-8080-4a27-8978-6e981815071b"
+        "Authorization": "Bearer d669ff9c-0c69-4639-a419-c05a6ab2c25a"
     }
 
     # Set the request data
     data = {
         "entityId" : "ef607668-a51a-4ea6-8b7b-dab07e0ab151",
         "entityType" : "hub",
-        "leaderId": "58310774-1dc5-42a5-8de4-fff2559622c6",
-        "playerId": "58310774-1dc5-42a5-8de4-fff2559622c6",
+        "leaderId": "ee4d0675-d8db-43ea-8137-390f4a9277d0",
+        "playerId": "ee4d0675-d8db-43ea-8137-390f4a9277d0",
         "playerType": "solo",
-        "userIds" : ["58310774-1dc5-42a5-8de4-fff2559622c6"],
-        "0" : "58310774-1dc5-42a5-8de4-fff2559622c6"
+        "userIds" : ["ee4d0675-d8db-43ea-8137-390f4a9277d0"],
+        "0" : "ee4d0675-d8db-43ea-8137-390f4a9277d0"
 
     }
 
