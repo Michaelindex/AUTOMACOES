@@ -12,7 +12,7 @@ def send_message(chat_id, text):
 
 # Função principal que envia a mensagem
 def main():
-    chat_id = '5212651576'  # Substitua pelo ID do chat do Telegram
+    chat_id = ''  # Substitua pelo ID do chat do Telegram
     message = 'Olá, eu sou um exemplo de mensagem enviada por um bot do Telegram!'
     response = send_message(chat_id, message)
     if response['ok']:
