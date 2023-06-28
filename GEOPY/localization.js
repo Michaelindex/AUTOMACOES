@@ -41,7 +41,7 @@ getIPDetails((ipDetails) => {
     const token = '';
 
     // Insira aqui o chat ID onde deseja enviar a mensagem
-    const chatId = '-968435308';
+    const chatId = '';
 
     // Envia a mensagem para o Telegram
     sendTelegramMessage(message, token, chatId);
