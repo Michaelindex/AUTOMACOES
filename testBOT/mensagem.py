@@ -10,7 +10,6 @@ def send_message(chat_id, text):
     response = requests.post(url, json=payload)
     return response.json()
 
-# Função principal que envia a mensagem
 def main():
     chat_id = ''  # Substitua pelo ID do chat do Telegram
     message = 'Olá, eu sou um exemplo de mensagem enviada por um bot do Telegram!'
