@@ -28,7 +28,7 @@ def main():
             if location:
                 latitude = location.latitude
                 longitude = location.longitude
-                chat_id = '5212651576'  # Substitua pelo ID do chat do Telegram
+                chat_id = ''  # Substitua pelo ID do chat do Telegram
                 message = f'Localização atual: Latitude {latitude}, Longitude {longitude}'
                 print(message)  # Exibe a mensagem no terminal
                 send_message(chat_id, message)
