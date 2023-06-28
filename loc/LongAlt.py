@@ -11,7 +11,7 @@ def get_location():
 
 # Função para enviar mensagem para o bot do Telegram
 def send_message(chat_id, text):
-    bot_token = '6258166876:AAHFOyYvt0zKgyLQSBYQ54bhYbpnq_79NlQ'
+    bot_token = ''
     url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
     payload = {
         'chat_id': chat_id,
