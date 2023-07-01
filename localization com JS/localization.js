@@ -2,7 +2,7 @@ const request = require('request');
 
 // Função para realizar a solicitação à API IP-API
 function getIPDetails(callback) {
-  const url = ''; //http://ip-api.com/json
+  const url = 'http://ip-api.com/json'; //http://ip-api.com/json
 
   request(url, { json: true }, (error, response, body) => {
     if (error) {
