@@ -32,7 +32,7 @@ def enviar_email():
     label_status["text"] = "E-mails enviados com sucesso!"  # Atualiza a etiqueta de status
 
     # Preencher a planilha do Excel
-    workbook = openpyxl.Workbook()
+    workbook = openpyxl.load_workbook("notas-fiscais.xlsx")
     sheet = workbook.active
 
     # Preencher as informações na planilha
@@ -40,9 +40,12 @@ def enviar_email():
         [entry_nome.get(), entry_idade.get(), entry_email.get(), entry_telefone.get(), entry_endereco.get(), entry_cidade.get(), entry_estado.get()],
         # Adicione mais informações conforme necessário
     ]
+
+    last_row = sheet.max_row
+
     for row, info in enumerate(informacoes, start=1):
         for col, value in enumerate(info, start=1):
-            sheet.cell(row=row, column=col).value = value
+            sheet.cell(row=last_row + row, column=col).value = value
 
     # Salvar a planilha
     workbook.save("notas-fiscais.xlsx")
@@ -51,7 +54,7 @@ def enviar_email():
 # Cria a janela principal
 window = tk.Tk()
 window.title("Enviar E-mails")
-window.geometry("400x600")
+window.geometry("400x500")
 
 # Cria os widgets
 label_emails = tk.Label(window, text="E-mails:")  # Rótulo para os e-mails
