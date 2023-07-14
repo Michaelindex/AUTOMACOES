@@ -1,14 +1,12 @@
-#AQUI APENAS UM EMAIL CONVENCIONAL
-
 import win32com.client as win32
 
 outlook = win32.Dispatch("Outlook.Application")
 message = outlook.CreateItem(0)
 message.Display()
-message.To = ""
+message.To = "" #PARA QUEM
 message.Cc = ""   #COM COPIA
-#message.Bcc = emails   - COM COPIA OCULTA
-message.Subject = "AQUI O ASSUNTO"
+message.Bcc = ""   #COM COPIA OCULTA
+message.Subject = "" #AQUI O ASSUNTO
 body = """
 <h1>Michael</h1>
 <p>Teste Teste</p>
