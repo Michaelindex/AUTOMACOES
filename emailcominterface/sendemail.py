@@ -51,7 +51,7 @@ def enviar_email():
 # Cria a janela principal
 window = tk.Tk()
 window.title("Enviar E-mails")
-window.geometry("400x500")
+window.geometry("400x600")
 
 # Cria os widgets
 label_emails = tk.Label(window, text="E-mails:")  # Rótulo para os e-mails
