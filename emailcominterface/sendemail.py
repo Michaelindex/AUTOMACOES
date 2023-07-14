@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
 import win32com.client as win32
+import openpyxl
 
 def selecionar_anexo():
     # Função para selecionar o arquivo de anexo
@@ -29,6 +30,24 @@ def enviar_email():
         message.Send()  # Envia o e-mail
 
     label_status["text"] = "E-mails enviados com sucesso!"  # Atualiza a etiqueta de status
+
+    # Preencher a planilha do Excel
+    workbook = openpyxl.Workbook()
+    sheet = workbook.active
+
+    # Preencher as informações na planilha
+    informacoes = [
+        ["João", 25, "joao@example.com", "123456789", "Rua A, 123", "São Paulo", "SP"],
+        ["Maria", 30, "maria@example.com", "987654321", "Rua B, 456", "Rio de Janeiro", "RJ"],
+        # Adicione mais informações conforme necessário
+    ]
+    for row, info in enumerate(informacoes, start=1):
+        for col, value in enumerate(info, start=1):
+            sheet.cell(row=row, column=col).value = value
+
+    # Salvar a planilha
+    workbook.save("caminho/do/arquivo.xlsx")
+    workbook.close()
 
 # Cria a janela principal
 window = tk.Tk()
