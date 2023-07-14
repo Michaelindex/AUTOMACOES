@@ -54,7 +54,7 @@ def enviar_email():
 # Cria a janela principal
 window = tk.Tk()
 window.title("Enviar E-mails")
-window.geometry("400x500")
+window.geometry("400x700")
 
 # Cria os widgets
 label_emails = tk.Label(window, text="E-mails:")  # Rótulo para os e-mails
@@ -77,30 +77,30 @@ label_anexo.pack()
 entry_anexo = tk.Entry(window, width=30)  # Campo de entrada para o caminho do anexo
 entry_anexo.pack()
 
-label_nome = tk.Label(window, text="Nome:")
-label_nome.pack()
-entry_nome = tk.Entry(window, width=40)
-entry_nome.pack()
+label_rzsocial = tk.Label(window, text="razão-social:")
+label_rzsocial.pack()
+entry_rzsocial = tk.Entry(window, width=40)
+entry_rzsocial.pack()
 
-label_idade = tk.Label(window, text="Idade:")
-label_idade.pack()
-entry_idade = tk.Entry(window, width=40)
-entry_idade.pack()
+label_data_enviada = tk.Label(window, text="data-enviada:")
+label_data_enviada.pack()
+entry_data_enviada = tk.Entry(window, width=40)
+entry_data_enviada.pack()
 
-label_email = tk.Label(window, text="E-mail:")
-label_email.pack()
-entry_email = tk.Entry(window, width=40)
-entry_email.pack()
+label_numero_pc = tk.Label(window, text="numero-pc:")
+label_numero_pc.pack()
+entry_numero_pc = tk.Entry(window, width=40)
+entry_numero_pc.pack()
 
-label_telefone = tk.Label(window, text="Telefone:")
-label_telefone.pack()
-entry_telefone = tk.Entry(window, width=40)
-entry_telefone.pack()
+label_numero_nf = tk.Label(window, text="numero-nf:")
+label_numero_nf.pack()
+entry_numero_nf = tk.Entry(window, width=40)
+entry_numero_nf.pack()
 
-label_endereco = tk.Label(window, text="Endereço:")
-label_endereco.pack()
-entry_endereco = tk.Entry(window, width=40)
-entry_endereco.pack()
+label_valor = tk.Label(window, text="Valor:")
+label_valor.pack()
+entry_valor = tk.Entry(window, width=40)
+entry_valor.pack()
 
 label_cidade = tk.Label(window, text="Cidade:")
 label_cidade.pack()
