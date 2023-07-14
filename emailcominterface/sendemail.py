@@ -37,7 +37,7 @@ def enviar_email():
 
     # Preencher as informações na planilha
     informacoes = [
-        [entry_nome.get(), entry_idade.get(), entry_email.get(), entry_telefone.get(), entry_endereco.get(), entry_cidade.get(), entry_estado.get()],
+        [entry_rzsocial.get(), entry_data_enviada.get(), entry_numero_pc.get(), entry_numero_nf.get(), entry_valor.get(), entry_data_emissao.get(), entry_data_vencimento.get()],
         # Adicione mais informações conforme necessário
     ]
 
