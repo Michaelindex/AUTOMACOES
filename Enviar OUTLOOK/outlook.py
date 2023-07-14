@@ -8,7 +8,7 @@ message.Display()
 message.To = ""
 message.Cc = ""   #COM COPIA
 #message.Bcc = emails   - COM COPIA OCULTA
-#message.Subject = "AQUI O ASSUNTO"
+message.Subject = "AQUI O ASSUNTO"
 body = """
 <h1>Michael</h1>
 <p>Teste Teste</p>
