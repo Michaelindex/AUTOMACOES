@@ -37,8 +37,7 @@ def enviar_email():
 
     # Preencher as informações na planilha
     informacoes = [
-        ["João", 25, "joao@example.com", "123456789", "Rua A, 123", "São Paulo", "SP"],
-        ["Maria", 30, "maria@example.com", "987654321", "Rua B, 456", "Rio de Janeiro", "RJ"],
+        [entry_nome.get(), entry_idade.get(), entry_email.get(), entry_telefone.get(), entry_endereco.get(), entry_cidade.get(), entry_estado.get()],
         # Adicione mais informações conforme necessário
     ]
     for row, info in enumerate(informacoes, start=1):
@@ -52,7 +51,7 @@ def enviar_email():
 # Cria a janela principal
 window = tk.Tk()
 window.title("Enviar E-mails")
-window.geometry("400x400")
+window.geometry("400x500")
 
 # Cria os widgets
 label_emails = tk.Label(window, text="E-mails:")  # Rótulo para os e-mails
@@ -74,6 +73,41 @@ label_anexo = tk.Label(window, text="Anexo:")  # Rótulo para o anexo
 label_anexo.pack()
 entry_anexo = tk.Entry(window, width=30)  # Campo de entrada para o caminho do anexo
 entry_anexo.pack()
+
+label_nome = tk.Label(window, text="Nome:")
+label_nome.pack()
+entry_nome = tk.Entry(window, width=40)
+entry_nome.pack()
+
+label_idade = tk.Label(window, text="Idade:")
+label_idade.pack()
+entry_idade = tk.Entry(window, width=40)
+entry_idade.pack()
+
+label_email = tk.Label(window, text="E-mail:")
+label_email.pack()
+entry_email = tk.Entry(window, width=40)
+entry_email.pack()
+
+label_telefone = tk.Label(window, text="Telefone:")
+label_telefone.pack()
+entry_telefone = tk.Entry(window, width=40)
+entry_telefone.pack()
+
+label_endereco = tk.Label(window, text="Endereço:")
+label_endereco.pack()
+entry_endereco = tk.Entry(window, width=40)
+entry_endereco.pack()
+
+label_cidade = tk.Label(window, text="Cidade:")
+label_cidade.pack()
+entry_cidade = tk.Entry(window, width=40)
+entry_cidade.pack()
+
+label_estado = tk.Label(window, text="Estado:")
+label_estado.pack()
+entry_estado = tk.Entry(window, width=40)
+entry_estado.pack()
 
 button_selecionar_anexo = tk.Button(window, text="Selecionar Anexo", command=selecionar_anexo)  # Botão para selecionar o anexo
 button_selecionar_anexo.pack()
