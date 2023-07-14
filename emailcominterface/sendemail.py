@@ -46,7 +46,7 @@ def enviar_email():
             sheet.cell(row=row, column=col).value = value
 
     # Salvar a planilha
-    workbook.save("caminho/do/arquivo.xlsx")
+    workbook.save("notas-fiscais.xlsx")
     workbook.close()
 
 # Cria a janela principal
