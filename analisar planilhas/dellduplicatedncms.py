@@ -2,8 +2,8 @@ import pandas as pd
 
 def remove_duplicatas_por_impostos():
     # Ajuste o caminho do CSV se necessário
-    input_csv = 'analisar planilhas/oneitemimp.csv'
-    output_csv = 'analisar planilhas/oneitemimp_filtrado.csv'
+    input_csv = r"C:\Users\m.santos\OneDrive - Corporate\Área de Trabalho\oneitemimp.csv"
+    output_csv = r"C:\Users\m.santos\OneDrive - Corporate\Área de Trabalho\oneitemimp_filtered.csv"
     
     # Ler o CSV, assumindo delimitador ; e encoding UTF-8
     df = pd.read_csv(input_csv, sep=';', encoding='utf-8')
