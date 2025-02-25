@@ -2,8 +2,8 @@ import pandas as pd
 
 def remove_duplicatas_por_impostos():
     # Ajuste o caminho do CSV se necessário
-    input_csv = 'oneitemimp.csv'
-    output_csv = 'oneitemimp_filtrado.csv'
+    input_csv = 'analisar planilhas/oneitemimp.csv'
+    output_csv = 'analisar planilhas/oneitemimp_filtrado.csv'
     
     # Ler o CSV, assumindo delimitador ; e encoding UTF-8
     df = pd.read_csv(input_csv, sep=';', encoding='utf-8')
@@ -17,7 +17,7 @@ def remove_duplicatas_por_impostos():
     # Remover duplicatas mantendo apenas o último registro de cada combinação
     # (NCM, %ICMS, % I.P.I., %PIS, % I.I)
     df.drop_duplicates(
-        subset=['NCM', '%ICMS', '% I.P.I.', '%PIS', '% I.I'],
+        subset=['NCM', '% ICMS', '% I.P.I.', '% PIS', '% I.I'],
         keep='last',
         inplace=True
     )
